@@ -1,0 +1,160 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080707;
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main poster */
+.poster {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url("./ST.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* Header */
+.header {
+    padding-top: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.small-heading {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+
+/* Main Title */
+.movie {
+    font-size: clamp(50px, 10vw, 95px);
+    color: #fff8dc;
+    line-height: 0.9;
+    text-shadow: 0 0 5px #ffcc00, 0 0 15px #ff9900, 0 0 25px #000;
+
+}
+
+    .movie span {
+        display: block;
+        margin-top: 5px;
+    }
+
+.season {
+    margin-top: 60px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Content */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 120px 40px;
+    margin-top: 80px;
+}
+
+.content h2 {
+    color: #ffd166;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffb703;
+}
+
+
+
+
+.description {
+    max-width: 550px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.release {
+    margin-top: 30px;
+    color: #ffd6d6;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    color: #d9d9d9;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+    .footer p:first-child {
+        margin-bottom: 8px;
+    }
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .content {
+        padding: 100px 25px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        padding-top: 60px;
+    }
+
+    .content {
+        padding: 80px 20px;
+    }
+
+    .small-heading {
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+}
